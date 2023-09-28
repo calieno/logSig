@@ -10,4 +10,10 @@ route.get('/mail', ()=>{
     sendEmailTeste("calieno@gmail.com").catch(console.error)
 }) 
 
-export default route
+// APAGAR ROTA DE TESTE
+route.get('/teste', ()=> {
+    console.log('TESTE OK')
+})
+
+
+export default route 

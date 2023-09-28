@@ -1,4 +1,4 @@
-import express from 'express'
+import express, {NextFunction, Request, Response}  from 'express'
 import cors from 'cors'
 import route from './Routes'
 
@@ -8,6 +8,7 @@ class App{
         this.server = express()
         this.middlewares()
         this.routes()
+        this.tratError()
     }
 
     middlewares(){
@@ -18,6 +19,17 @@ class App{
     routes(){
         this.server.use(route)
     }
+
+    tratError(){
+        this.server.use((error: Error, request: Request, response: Response, next: NextFunction) => {
+            return response.json({
+                status: "Error",
+                message: error.message
+            })
+        })
+    }
+   
 }
+
 
 export default new App().server

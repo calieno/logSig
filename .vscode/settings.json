@@ -1,5 +1,9 @@
 {
     "material-icon-theme.folders.associations": {
         "mail": "Custom"
+    },
+    "material-icon-theme.files.associations": {
+        "Server.ts":"Craco"
     }
+
 }

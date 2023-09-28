@@ -11,12 +11,11 @@ const transport = mail.createTransport({
     }
 })
 export async function sendEmailTeste(mailto: string) {
-    // send mail with defined transport object
     const info = await transport.sendMail({
         from: "Teste <calieno@hotmail.com>",
         to: mailto,
         subject: "Email de teste nodemailer",
-        html: "<h1>Um Teste</h1> <p>este é somente um teste de email</p> ",
+        html: "<h1>Um Teste</h1> <p>este é somente um teste de email</p> <BR>" + Date.now(),
         text: "Teste sem rederizar o HTML",
     })
 
