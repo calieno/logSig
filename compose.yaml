@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  #Banco Postgres
+  db:
+    container_name: postgres
+    platform: linux/amd64
+    restart: always
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PW=postgres
+      - POSTGRES_DB=logsig
+      - POSTGRES_HOST_AUTH_METHOD=trust

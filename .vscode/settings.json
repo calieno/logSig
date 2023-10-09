@@ -1,9 +1,16 @@
 {
-    "material-icon-theme.folders.associations": {
-        "mail": "Custom"
-    },
-    "material-icon-theme.files.associations": {
-        "Server.ts":"Craco"
-    }
-
+  "material-icon-theme.folders.associations": {
+    "mail": "Custom"
+  },
+  "material-icon-theme.files.associations": {
+    "Server.ts": "Craco"
+  },
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "full",
+  "editor.autoClosingBrackets": "always",
+  "editor.fontSize": 12,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
