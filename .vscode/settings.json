@@ -3,14 +3,20 @@
     "mail": "Custom"
   },
   "material-icon-theme.files.associations": {
-    "Server.ts": "Craco"
+    "server.ts": "Craco"
   },
   "editor.formatOnSave": true,
-  "editor.autoIndent": "full",
   "editor.autoClosingBrackets": "always",
-  "editor.fontSize": 12,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "gutter",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.visible": true,
+  
+  
 }

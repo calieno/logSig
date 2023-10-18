@@ -1,10 +1,24 @@
-GET http://localhost:3333/ HTTP/1.1
-content-type: application/json
-
+@hostname = http://localhost
+@port = 3333
+@host = {{hostname}}:{{port}}
+@ctype = application/json
+@createdAt = {{$datetime iso8601}}
+@modifiedBy = {{$processEnv USERNAME}}
 ###
 
-GET http://localhost:3333/mail
-
+GET {{host}}/mail
 ###
 
-GET http://localhost:3333/teste
+GET {{host}}/
+###
+
+GET {{host}}/user
+###
+
+POST  {{host}}/createUser
+content-type: {{ctype}}
+{
+    "name": "Calieno",
+    "username": "calieno@gmail.com",
+    "passwd":"1234"
+}
